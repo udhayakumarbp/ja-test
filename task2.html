@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>In a JSON we have below data:</title>
+</head>
+
+<body>
+    <h2>In a JSON we have below data:</h2>
+    <p id="demo"></p>
+</body>
+<script>
+'use strict'
+var employees = {
+    "permittedCountries": [{
+            "employeeId": "1",
+            "employeeAddress": {
+                "city": "Bangalore",
+                "state": "Karnataka"
+            }
+        },
+        {
+            "employeeId": "2",
+            "employeeAddress": {
+                "city": "Chennai",
+                "state": "TamilNadu"
+            }
+        },
+        {
+            "employeeId": "4",
+            "employeeAddress": {
+                "city": "Bangalore",
+                "state": "Karnataka"
+            }
+        },
+        {
+            "employeeId": "5",
+            "employeeAddress": {
+                "city": "Chennai",
+                "state": "TamilNadu"
+            }
+        }
+    ]
+}
+var employees = employees.permittedCountries;
+employees.sort(function(a, b) {
+    var employees1 = a.employeeAddress.state;
+    var employees2 = b.employeeAddress.state;
+    if (employees1 === employees2) {
+        return 0;
+    }
+    if (employees1 === employees2) {
+        return 1;
+    }
+    if (employees1 === employees2) {
+        return -1;
+    }
+});
+document.getElementById('demo').innerHTML = employees;
+</script>
+
+</html>

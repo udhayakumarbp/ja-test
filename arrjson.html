@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Access an array value of a JSON object.</title>
+</head>
+<body>
+<h2>Access an array value of a JSON object.</h2>
+<p id="demo"></p>
+
+
+
+<script>
+	var myobj, x;
+	myobj ={"name":"parakash", "age":30, "car":["Ford", "Bins", "swift"]}
+
+	for(x in myobj)
+	{
+		document.getElementById('demo').innerHTML +=  myobj.car[0] + "<br>"
+	}
+
+
+
+
+</script>
+
+</body>
+</html>
+

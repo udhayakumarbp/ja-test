@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Store and retrieve data from local storage</title>
+</head>
+
+<body>
+    <h2>Store and retrieve data from local storage</h2>
+    <p id="demo"></p>
+    <script>
+    var myObj = '{ "name":"Udhaya", "age":"27", "city":"Balg"}'
+    var obj = JSON.parse(myObj)
+
+    for (x in obj) {
+        document.getElementById('demo').innerHTML += x + ':' + obj[x] + "<br>"
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Access a JSON object using dot notation</title>
+</head>
+
+<body>
+    <h2>Access a JSON object using dot notation:</h2>
+    <p id="demo"></p>
+    <script>
+    var myobj = { "name": "babu", "dept": "cse", "year": "3rd" }
+    for (x in myobj) {
+        document.getElementById('demo').innerHTML += myobj[x] + "<br>"
+    }
+    </script>
+</body>
+
+</html>
